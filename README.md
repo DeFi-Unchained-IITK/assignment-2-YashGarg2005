@@ -9,7 +9,7 @@ Your task is to create a smart contract "PrimeOwner". You have to first declare 
 
 Lastly, emit an event whenever the “owner” is changed.
 
-I HAVE UPLOADED A VIDEO
+I HAVE UPLOADED THE VIDEO
 
 ## Question 2 :
 
