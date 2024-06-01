@@ -9,6 +9,8 @@ Your task is to create a smart contract "PrimeOwner". You have to first declare 
 
 Lastly, emit an event whenever the “owner” is changed.
 
+I HAVE UPLOADED A VIDEO
+
 ## Question 2 :
 
 Your task is to create a smart contract “EmployeeRegistree”. You have to define a struct “Employee” with properties : **uint ID, string name, string position, uint salary**.
@@ -21,6 +23,8 @@ Write four functions :
 
 Revert back the function calls whenever the id doesn’t exist (in case of last 3 functions). \
 Emit separate events for the functions that adds or updates or deletes an employee. The event should contain all details of employee. In case of deletion, emit the details of the employee deleted.
+
+I HAVE UPLOADED THE VIDEO
 
 ## Question 3 :
 
