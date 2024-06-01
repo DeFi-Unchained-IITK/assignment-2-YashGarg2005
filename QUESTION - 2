@@ -1,0 +1,49 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.12 <0.9.0;
+
+contract Question2{
+  struct EmployeeRegistree {
+    uint ID;
+    string name;
+    string position;
+    uint salary;
+  }
+  EmployeeRegistree[] public work;
+  uint nextID = 0;
+  event GalueSet(string  name , string  position , uint salary);
+  function AddEmployee(string memory _name , string memory _position , uint _salary) public {
+    work.push(EmployeeRegistree(nextID,_name,_position,_salary));
+    EmployeeRegistree storage emp = work[nextID];
+    emit GalueSet(emp.name,emp.position,emp.salary);
+    nextID++;
+  }
+  event MalueSet(string  name , string  position , uint salary);
+  function UpdateEmployee(uint ID , string memory _newname , string memory _newposition , uint _newsalary)public {
+    require(ID>=0 && ID<=work.length,"please enter the ID of Employee");
+    EmployeeRegistree storage emp = work[ID];
+     emit MalueSet(emp.name,emp.position,emp.salary);
+    emp.name= _newname;
+    emp.position= _newposition;
+    emp.salary= _newsalary;
+
+  }
+  function GetEmployee (uint ID) public view returns(string memory ,string memory, uint){
+    EmployeeRegistree memory emp = work[ID];
+    return (emp.name,emp.position,emp.salary);
+  }
+  event ValueSet(string  name , string  position , uint salary);
+  function DelEmployee (uint ID )public {
+    require(ID>=0 && ID<=work.length,"please enter the ID of Employee");
+    
+    EmployeeRegistree storage emp = work[ID];
+    emit ValueSet(emp.name,emp.position,emp.salary);
+    emp.name= "deleted emplyee";
+    emp.position= "no position to show";
+    emp.salary= 0;
+
+  }
+
+}
+
+
+ 
