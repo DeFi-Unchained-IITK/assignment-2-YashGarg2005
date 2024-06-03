@@ -14,17 +14,17 @@ I HAVE UPLOADED THE VIDEO
 
 ## Question 2 :
 
-Your task is to create a smart contract “EmployeeRegistree”. You have to define a struct “Employee” with properties : **uint ID, string name, string position, uint salary**.
-Now, create a mapping to store Employees by their ID and maintain a state variable to track the ID for the next employee to be added.
-Write four functions : 
+I have created a employeeregistree contract and employee struct as defined in the question then used mapping from id to the struct.
+I have a common event value(uint string string uint) for compilation of logs
+
+Then I have four functions
 1. **AddEmployee** - takes the required Employee properties(name, position, salary) and adds the Employee to the mapping.
 2. **UpdateEmployee** - takes the input id, updated name, position and salary and updates the same in the mapping.
 3. **GetEmployeeDetails** - takes the input id and returns the Employee’s name, position and salary.
 4. **DeleteEmployee** - takes the input id and deletes the employee from the mapping.
 
-Revert back the function calls whenever the id doesn’t exist (in case of last 3 functions). \
-Emit separate events for the functions that adds or updates or deletes an employee. The event should contain all details of employee. In case of deletion, emit the details of the employee deleted.
-
+for the last three questions I have used revert call back by require keyword to ensure that ID is valid
+**Issue with the code** - If we use the DelEmployee then that ID can't be updated only unique ID are allowed 
 I HAVE UPLOADED THE VIDEO
 
 ## Question 3 :
