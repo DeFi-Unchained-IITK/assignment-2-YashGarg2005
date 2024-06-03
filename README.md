@@ -31,7 +31,7 @@ I HAVE UPLOADED THE VIDEO
 
 ## Question 3 :
 
-I have created a Library contract with book struct and to mapping for starage of data
+I have created a Library contract with book struct and two mapping for starage of data
 
 
 1. **AddBook** - takes the book details(name, author) and adds the book to books mapping.
