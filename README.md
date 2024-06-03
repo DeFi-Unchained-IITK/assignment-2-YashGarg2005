@@ -2,12 +2,13 @@
 
 ## Question 1 :
 
-Your task is to create a smart contract "PrimeOwner". You have to first declare a state variable owner. Now,  create two functions 
+1.created a constructor for using msg.sender as shared in code blocks
 
-1. A public function which takes an uint input and changes the owner to the address that calls the function if the input is a Prime number. Revert the function call if input is less than 1.
-2. A private function which helps the above function in checking if the number is prime or not.
+2.Used simple logic for telling prime numbers like in c++
 
-Lastly, emit an event whenever the “owner” is changed.
+3.Used 2 revert call functions that help to check that number is greater than 1[prime no are greater than 1] and second is a boolean to check if number is prime.
+
+
 
 I HAVE UPLOADED THE VIDEO
 
