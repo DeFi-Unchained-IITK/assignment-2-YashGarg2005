@@ -31,21 +31,18 @@ I HAVE UPLOADED THE VIDEO
 
 ## Question 3 :
 
-Your task is to create a smart contract “Library”. First, define a struct “**Book**” with properties : **uint ID, string name, string author, bool isAvailable**.\
-Now, create 2 mappings, one to store books by their id (books), another to store books by their owner address (borrowed_books).\
-Write the following functions : 
+I have created a Library contract with book struct and to mapping for starage of data
+
+
 1. **AddBook** - takes the book details(name, author) and adds the book to books mapping.
 2. **BorrowBook** - takes input the book id, checks if the book is available and assigns the book to the user (i.e. adds the book the borrowed_books mapping).
 3. **GetBookDetails** - takes input the book id and returns the book details.
 4. **ReturnBook** - checks if the book was borrowed by the user calling the function or not and takes back the book (i.e. removes it from the mapping borrowed_books).
 
 
-Write a modifier to help check functions if the input book id is valid or not.
+**Issue with the code** - If we use the DelEmployee then that ID can't be updated only unique ID are allowed 
 
 I HAVE UPLOADED THE VIDEO
-
-You have to create one folder named "FirstName_Roll". In that folder, you have to add three files, one for each question. You can code in Remix IDE and download the file. Also, ensure to update the readme file, the unupadated readme files will not be considered valid. The readme file should contain the description of the code of each question and the screenshots of the function's output deployed in Remix IDE.
-
 
 
 
