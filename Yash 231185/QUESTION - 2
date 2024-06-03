@@ -68,7 +68,7 @@ contract EmployeeRegistree{
 
 
 
-
+my initial code with no mapping
 
 // SPDX-License-Identifier: MIT
 // ragma solidity >=0.6.12 <0.9.0;
